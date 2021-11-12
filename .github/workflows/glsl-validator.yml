@@ -1,0 +1,22 @@
+name: GLSL Validator
+on: [push]
+jobs:
+  Validate-GLSL:
+    name: GLSL Validator
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Download GLSL Validator release
+        uses: wei/wget@v1
+        with:
+          args: -O GLSLValidator.zip https://github.com/KhronosGroup/glslang/releases/download/master-tot/glslang-master-linux-Release.zip
+      - name: Decompress
+        uses: TonyBogdanov/zip@1.0
+        with:
+          args: unzip -qq ./GLSLValidator.zip -d ./validator
+      - name: Validate fragment shaders
+        run: ./validator/bin/glslangValidator **/**.frag
+# enable whenever theres vertex shaders in the repo
+#      - name: Validate vertex shaders
+#        run: ./validator/bin/glslangValidator **/**.vert
