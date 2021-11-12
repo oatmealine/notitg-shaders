@@ -19,6 +19,5 @@ jobs:
           args: unzip -qq ./glslang-master-linux-Release.zip -d ./validator
       - name: Validate fragment shaders
         run: ./validator/bin/glslangValidator ./fragment/**/**.frag
-# enable whenever theres vertex shaders in the repo
-#      - name: Validate vertex shaders
-#        run: ./validator/bin/glslangValidator ./vertex/**/**.vert
+      - name: Validate vertex shaders
+        run: ./validator/bin/glslangValidator ./vertex/**/**.vert
