@@ -1,3 +1,5 @@
+#version 120
+
 // applies a fisheye effect (or antifisheye effect)
 // source unknown
 

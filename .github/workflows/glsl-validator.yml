@@ -15,7 +15,6 @@ jobs:
         uses: TonyBogdanov/zip@1.0
         with:
           args: unzip -qq ./GLSLValidator.zip -d ./validator
-      - run: ls
       - name: Validate fragment shaders
         run: ./validator/bin/glslangValidator ./fragment/**/**.frag
 # enable whenever theres vertex shaders in the repo

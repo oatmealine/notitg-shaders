@@ -3,6 +3,7 @@
 // this is an unpatched version that has difficulties running on some gpus - please use glitch2.3.frag instead!
 // first seen in halcyoniix's tokyo shinwa(?)
 
+#version 120
 #define PI 3.14159265
 
 varying vec4 color;

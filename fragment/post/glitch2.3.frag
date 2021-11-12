@@ -2,6 +2,7 @@
 // original version - https://www.shadertoy.com/view/lsfGD2, this is an update with backwards compatibility
 // this is the ideal glitch2 version to use, as it doesn't have any drawbacks unlike glitch2.2.frag
 
+#version 120
 #define PI 3.14159265
 
 varying vec4 color;

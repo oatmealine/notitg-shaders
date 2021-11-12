@@ -3,6 +3,7 @@
 // you should use glitch2.3.frag over this, as this has a few visual drawbacks due to how it fixes the weird pow() behavior
 // this was shared on the uksrt server when first made, so there isn't really a "first seen"
 
+#version 120
 #define PI 3.14159265
 
 varying vec4 color;
