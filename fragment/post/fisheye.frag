@@ -1,7 +1,7 @@
-#version 120
-
 // applies a fisheye effect (or antifisheye effect)
 // source unknown
+
+#version 120
 
 uniform float amount; // the strength of the fisheye effect [-1.0 : 1.0]
 
